@@ -44,11 +44,13 @@ class LinkedList:
             return
         cur = node.get_next()
         node.set_next(prev)
+        # while cur is not None:
+        #     next_node = cur.next_node
+        #     cur.next_node = prev
+        #     prev = cur
+        #     cur = next_node
+        # self.head = prev
         if cur is not None:
-            # next_node = cur.next_node
-            # cur.next_node = prev
-            # prev = cur
-            # cur = next_node
             self.reverse_list(cur, node)
         else:
             self.head = node
