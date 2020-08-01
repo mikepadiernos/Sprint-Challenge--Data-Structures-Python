@@ -25,8 +25,8 @@ duplicates = []  # Return the list of duplicates in this data structure
 
 for name in names_1:
     cur = BSTNode(name)
-    named = name
-# for name in names_1:
+
+for name in names_1:
     cur.insert(name)
 
 for name in names_2:
