@@ -15,6 +15,11 @@ duplicates = []  # Return the list of duplicates in this data structure
 
 
 # Replace the nested for loops below with your improvements
+# for name_1 in names_1:
+#     for name_2 in names_2:
+#         if name_1 == name_2:
+#             duplicates.append(name_1)
+
 # for name in names_1:
 #     cur = BSTNode(name)
 #     for name in names_1:
@@ -23,14 +28,13 @@ duplicates = []  # Return the list of duplicates in this data structure
 #                 if cur.contains(name):
 #                     duplicates.append(name)
 
-for name in names_1:
-    cur = BSTNode(name)
+node = BSTNode('')
 
 for name in names_1:
-    cur.insert(name)
+    node.insert(name)
 
 for name in names_2:
-    if cur.contains(name):
+    if node.contains(name):
         duplicates.append(name)
 
 end_time = time.time()
